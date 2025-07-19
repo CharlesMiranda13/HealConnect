@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-family: 'Material Symbols Outlined';
+  font-size: 120px;
+  color: black;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: lighter;
+  color: black;
+  margin: 0;  
+  font-family: serif;
+}
+#homepage {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  text-align: left;
+  padding-top: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: antiquewhite;
+  z-index: 2;
+}
+#homepage h2 {
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 40px;
+  color: black;
+  font-family: 'monospace';
+}
+
+.tagline {
+  font-family: 'Gill Sans';
+  font-size: 20px;
+  color: black;
+  margin-bottom: 150px;
+  width: 500px;
+}
+
+.heartbeat-icon {
+  font-size: 70px;
+  display: inline-block;
+  animation: heartbeat 1.5s infinite;
+  color: #e74c3c;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}

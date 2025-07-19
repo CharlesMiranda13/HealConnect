@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealConnect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-wrapper">
+    <div class="icon-text">
+      <i class="fas fa-laptop-medical icon"></i>
+      <h1>HealConnect</h1>
+    </div>
+    <p class="tagline">A web-based platform for Physical Therapy services</p>
+    <div class="heartbeat-icon">❤️</div>
+  </div>
+
+  <!-- Homepage -->
+  <div id="homepage" style="display:none;">
+    <h2>Welcome to HealConnect!</h2>
+  </div>
+
+  <script> // loading screen
+    setTimeout(function () {
+      document.getElementById('loading-screen').style.display = 'none';
+      document.getElementById('homepage').style.display = 'block';
+    }, 3000);
+  </script>
+</body>
+</html>
